@@ -26,7 +26,7 @@ RUN rm -rf /etc/nginx/sites-enabled/*
 ADD nginx-flarum.conf /etc/nginx/sites-enabled/flarum.conf
 
 # MySQL
-RUN service mysql start &&
+RUN service mysql start
 
 # Init script
 ADD run-flarum.sh /run-flarum.sh
