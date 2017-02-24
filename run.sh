@@ -1,6 +1,6 @@
 #!/bin/sh
 
-echo "Starting flarum..."
+echo "Start flarum..."
 
 if [ ! -f "/var/www/flarum/admin.php" ];then
 cp -r /opt/flarum/* /var/www/flarum
@@ -10,14 +10,9 @@ mysql_install_db
 mysql -u root -e 'create database flarum'
 fi
 
-
-echo "Stargin mysql"
 /etc/init.d/mysql start
-
-echo "Starting php"
 /etc/init.d/php5-fpm start
 
-echo "Starting nginx"
 /etc/init.d/nginx start
 
 
