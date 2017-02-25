@@ -1,2 +1,2 @@
-  "language": "bash",
-  "sudo": "required",
+  language: bash
+  sudo: required
