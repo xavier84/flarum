@@ -8,11 +8,11 @@ RUN export DEBIAN_FRONTEND=noninteractive && apt-get update && \
                           mysql-server \
                           nginx \
                           openssl \
-                          php7.0 \
-                          php7.0-curl \
-                          php7.0-fpm \
-                          php7.0-gd \
-                          php7.0-mysql \
+                          php7.2 \
+                          php7.2-curl \
+                          php7.2-fpm \
+                          php7.2-gd \
+                          php7.2-mysql \
                           \
                           && \
     curl -sS https://getcomposer.org/installer | php && \
