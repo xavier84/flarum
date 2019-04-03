@@ -1,4 +1,4 @@
-FROM debian:8.2
+FROM debian
 MAINTAINER Xavier  <xavier@ratxabox.ovh>
 
 RUN export DEBIAN_FRONTEND=noninteractive && apt-get update && \
