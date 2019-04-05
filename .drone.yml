@@ -19,3 +19,4 @@ pipeline:
     when:
       branch: master
       event: [push, tag, deployment]
+
