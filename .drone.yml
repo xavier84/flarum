@@ -1,14 +1,14 @@
 pipeline:
   build:
     image: xataz/docker-drone-plugin
-    repo: xataz/golang
+    repo: xavier84/flarum
     action: build
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
 
   push:
     image: xataz/docker-drone-plugin
-    repo: xataz/golang
+    repo: xavier84/flarum
     action: push
     environment:
       - UID=1000
