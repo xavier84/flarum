@@ -9,11 +9,13 @@ RUN export DEBIAN_FRONTEND=noninteractive && apt-get update && \
                           git \
                           libcurl3\
                           mysql-server \
+                          apt-utils \
                           nginx \
                           openssl \
                           php7.2 \
                           php7.2-curl \
                           php7.2-fpm \
+                          php7.2-zip \
                           php7.2-gd \
                           php7.2-dom \
                           php7.2-mysql \
